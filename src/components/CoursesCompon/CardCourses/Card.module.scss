@@ -1,0 +1,172 @@
+.card {
+    padding: 45px 0 160px 0;
+    .container {
+        width: clamp(320px,  85.41%, 2000px);
+        margin: 0 auto;
+    }
+    &__title_wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 15% 0 5%;
+        h3 {
+            color: #fff;
+            font-size: 2.5rem;
+            font-weight: 200;
+        }
+    }
+    &__wrapper {
+        margin-top: 45px;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        align-items: start;
+        
+    }
+    &__platform,
+    &__chat,
+    &__task,
+    &__checking,
+    &__portfolio,
+    &__certificate {
+        width: 375px;
+        background: #d9d9d927;
+        border-radius: 30px;
+        padding-top: 37px;
+        transition: .2s ease-in-out;
+        &:hover {
+            background: #d9d9d956;
+        }
+        div {
+            color: #fff;
+            width: 50px;
+            height: 30px;
+            border: 1px solid #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 25px;
+            margin-left: 27px;
+        }
+        h4 {
+            color: #fff;
+            font-size: 4rem;
+            font-weight: 500;
+            margin-left: 27px;
+            word-break: break-word;
+            line-height: 0.7;
+            
+        }
+        p {
+            color: #fff;
+            font-size: 0.9rem;
+            font-weight: 100;
+            width: 65%;
+            margin-left: 27px;
+        }
+    }
+    &__platform {
+        height: 457px;
+        p {
+            margin-top: 52px;
+        }
+        img {
+            margin-top: 35px;
+        }
+        h4 {
+            margin-top: 10px;
+            width: 80%;
+        }
+    }
+    &__chat {
+        position: relative;
+        height: 230px;
+        img {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        p {
+            margin-top: 15px;
+        }
+        h4 {
+            margin-top: 15px;
+        }
+        
+    }
+    &__certificate {
+        position: relative;
+        height: 712px;
+        img {
+            position: absolute;
+            right: 50%;
+            top: 50%;
+            left: 40%;
+
+            transform: translate(-50%, -50%);
+        }
+        h4 {
+            width: 80%;
+            margin-top: 450px;
+        }
+        p {
+            margin-top: 35px;
+        }
+    }
+    &__task {
+        margin-top: 25px;
+        position: relative;
+        height: 457px;
+        img {
+            position: absolute;
+            right: 0;
+        }
+        p {
+            margin-top: 210px;
+        }
+        h4 {
+            margin-top: 20px;
+        }
+    }
+    &__checking {
+        position: relative;
+        height: 278px;
+        img {
+            position: absolute;
+            right: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            top: 38%;
+        }
+        p {
+            margin-top: 100px;
+            position: absolute;
+            left: 50%;
+            right: 50%;
+            transform: translate(-50%, -50%);
+            
+        }
+        h4 {
+            margin-top: 140px;
+        }
+    }
+    &__portfolio {
+        position: relative;
+        height: 406px;
+        margin-top: 25px;
+        img {
+            position: absolute;
+            right: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            top: 38%;
+        }
+        p {
+            margin-top: 175px;
+            
+        }
+        h4 {
+            margin-top: 16px;
+        }
+    }
+}

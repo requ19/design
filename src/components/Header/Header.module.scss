@@ -1,0 +1,132 @@
+@import url('https://fonts.cdnfonts.com/css/sf-ui-display');
+.header {
+    background: #000;
+    position: relative;
+   
+    .burger {
+        padding: 5px;
+        width: 20px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        display: none;
+        span{
+            display: block;
+            width: 22px;
+            height: 3px;
+            background: #fff;
+            border-radius: 5px;
+            &::after {
+                position: absolute;
+                content: '';
+                width: 22px;
+                height: 3px;
+                background-color: #fff;
+                top: 10px;
+                border-radius: 5px;
+
+            }
+            &::before {
+                position: absolute;
+                content: '';
+                width: 22px;
+                height: 3px;
+                background-color: #fff;
+                bottom: 10px;
+                border-radius: 5px;
+
+            }
+        }
+        
+
+        
+    }
+    .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        padding: 70px 0 0 0;
+        z-index: 999;
+        &__items {
+            display: flex;
+            gap: 40px;
+            a {
+                text-decoration: none;
+            }
+            li {
+                list-style: none;
+                color: #fff;
+                font-family: 'SF UI Display', sans-serif;
+                font-size: 16px;
+                font-weight: 300;
+            }
+        }
+        .btn {
+            margin-left: 190px;
+            background: none;
+            color: #fff;
+            border: none;
+            font-family: 'SF UI Display', sans-serif;
+            font-size: 16px;
+            font-weight: 300;
+    
+        }
+    }
+
+
+    /* Адаптивные стили */
+@media (max-width: 960px) {
+    .menu {
+        
+        
+        &__items {
+            
+            gap: 20px;
+        }
+        .btn {
+            margin-left: 90px;
+        }
+    }
+}
+
+@media (max-width: 755px) {
+    
+    .menu {
+        
+        
+        &__items {
+            
+            gap: 15px;
+        }
+        .btn {
+            margin-left: 50px;
+        }
+    }
+}
+@media (max-width: 690px) {
+    .burger {
+        display: block;
+    }
+    .menu {
+        transform: translateY(-100%);
+        background-color: black;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        &__items {
+            flex-direction: column;
+            gap: 40px;
+        }
+        .btn {
+            margin-left: 0px;
+            margin-top: 30px;
+        }
+    }
+}
+
+}
+
+
+

@@ -1,0 +1,36 @@
+.services {
+    &__img1 {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    &__img2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    &__img3 {
+        position: absolute;
+        top: 0;
+        left: 25%;
+    }
+    
+    .container {
+        max-width: 85.41%;
+        margin: 0 auto;
+    }
+    &__logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img{
+            margin: 40px 0;
+        }
+        p {
+            color: #fff;
+            font-size: 2.5rem;
+            font-weight: 100;
+        }
+    }
+}

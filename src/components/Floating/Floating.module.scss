@@ -1,0 +1,40 @@
+.text {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-4.4deg);
+    background: #1E1E1E;
+    border: 1px solid #F2B544;
+    width: 110%;
+    height: 95px;
+    margin-left: -5%;
+    overflow: hidden; /* Скрываем текст, выходящий за границы контейнера */
+    div {
+      position: absolute;
+      z-index: 1;
+    }
+  
+    p {
+      z-index: 4;
+      position: absolute;
+      color: #fff;
+      font-size: 2.5rem;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      white-space: nowrap; /* Запрещаем перенос текста */
+      transform: translateX(100%); /* Начальная позиция за пределами справа */
+      animation: slideLeft 10s linear infinite; /* Анимация текста */
+    }
+  }
+  
+  /* Анимация движения текста */
+  @keyframes slideLeft {
+    0% {
+      transform: translateX(100%); /* Начальная позиция справа */
+    }
+    100% {
+      transform: translateX(-100%); /* Уходит за левый край */
+    }
+  }
