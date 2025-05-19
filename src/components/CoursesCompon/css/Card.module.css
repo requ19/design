@@ -1,0 +1,161 @@
+.card {
+  padding: 45px 0 160px 0;
+}
+.card .container {
+  width: clamp(320px, 85.41%, 2000px);
+  margin: 0 auto;
+}
+.card__title_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15% 0 5%;
+}
+.card__title_wrapper h3 {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 200;
+}
+.card__wrapper {
+  margin-top: 45px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: start;
+}
+.card__platform, .card__chat, .card__task, .card__checking, .card__portfolio, .card__certificate {
+  width: 375px;
+  background: rgba(217, 217, 217, 0.1529411765);
+  border-radius: 30px;
+  padding-top: 37px;
+  transition: 0.2s ease-in-out;
+}
+.card__platform:hover, .card__chat:hover, .card__task:hover, .card__checking:hover, .card__portfolio:hover, .card__certificate:hover {
+  background: rgba(217, 217, 217, 0.337254902);
+}
+.card__platform div, .card__chat div, .card__task div, .card__checking div, .card__portfolio div, .card__certificate div {
+  color: #fff;
+  width: 50px;
+  height: 30px;
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  margin-left: 27px;
+}
+.card__platform h4, .card__chat h4, .card__task h4, .card__checking h4, .card__portfolio h4, .card__certificate h4 {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 500;
+  margin-left: 27px;
+  word-break: break-word;
+  line-height: 0.7;
+}
+.card__platform p, .card__chat p, .card__task p, .card__checking p, .card__portfolio p, .card__certificate p {
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 100;
+  width: 65%;
+  margin-left: 27px;
+}
+.card__platform {
+  height: 457px;
+}
+.card__platform p {
+  margin-top: 52px;
+}
+.card__platform img {
+  margin-top: 35px;
+}
+.card__platform h4 {
+  margin-top: 10px;
+  width: 80%;
+}
+.card__chat {
+  position: relative;
+  height: 230px;
+}
+.card__chat img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.card__chat p {
+  margin-top: 15px;
+}
+.card__chat h4 {
+  margin-top: 15px;
+}
+.card__certificate {
+  position: relative;
+  height: 712px;
+}
+.card__certificate img {
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+.card__certificate h4 {
+  width: 80%;
+  margin-top: 450px;
+}
+.card__certificate p {
+  margin-top: 35px;
+}
+.card__task {
+  margin-top: 25px;
+  position: relative;
+  height: 457px;
+}
+.card__task img {
+  position: absolute;
+  right: 0;
+}
+.card__task p {
+  margin-top: 210px;
+}
+.card__task h4 {
+  margin-top: 20px;
+}
+.card__checking {
+  position: relative;
+  height: 278px;
+}
+.card__checking img {
+  position: absolute;
+  right: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 38%;
+}
+.card__checking p {
+  margin-top: 100px;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+}
+.card__checking h4 {
+  margin-top: 140px;
+}
+.card__portfolio {
+  position: relative;
+  height: 406px;
+  margin-top: 25px;
+}
+.card__portfolio img {
+  position: absolute;
+  right: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 38%;
+}
+.card__portfolio p {
+  margin-top: 175px;
+}
+.card__portfolio h4 {
+  margin-top: 16px;
+}/*# sourceMappingURL=Card.module.css.map */

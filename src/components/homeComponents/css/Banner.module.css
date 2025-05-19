@@ -1,0 +1,36 @@
+.banner {
+  background: rgba(255, 255, 255, 0.0823529412);
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.2117647059);
+  border-right: none;
+  border-left: none;
+}
+.banner__img1 {
+  position: absolute;
+  top: -50%;
+  left: 0;
+}
+.banner__img2 {
+  position: absolute;
+  top: -50%;
+  right: 0px;
+}
+.banner__wrapper {
+  margin: auto;
+  width: 1170px;
+}
+.banner__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 250px;
+}
+.banner__item {
+  color: #fff;
+}
+.banner__item div {
+  font-size: 3rem;
+}
+.banner__item p {
+  font-size: 1.5rem;
+}/*# sourceMappingURL=Banner.module.css.map */
